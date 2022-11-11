@@ -1,22 +1,13 @@
-<p align="center">
-  <img src=".img/ctiformats.gif" alt="animated" />
-</p>
-
 # Overview
 
-An accessible POC website to convert threat intelligence formats. Note that this is not tested or robust or secure at the moment, it's just a proof of concept :wink:
+A simple webapp based on django and react. You can upload entries via json. The app stores and displays added entries.
 
 # Instructions
 
 Clone this repository and install docker. Then:
-* `docker-compose build`
-* `docker-compose up -d`
-* `docker ps -a to get the id of the django container`
-* `docker exec -it <container id goes here> /bin/bash`
-* `python manage.py migrate`
-* `python manage.py createsuperuser`
-* `Go to localhost:8000/admin and add some data in`
+* `Initializing backend will add few entries automatically using the given json in the assignment.
 * `Go to localhost:3000 to see the front end and you'll see the site!`
+* `Upload a valid json with a similar schema to add more entries
 
 ## Tech Stack
 
@@ -26,9 +17,3 @@ Clone this repository and install docker. Then:
 * Chakra UI
 * JavaScript
 * Docker
-
-## Backend Libraries
-
-
-* [Stix 2 to elasticsearch](https://github.com/mitre/stix2patterns_translator)
-* [JSON to STIX 2 and Stix to Native Data Source](https://github.com/opencybersecurityalliance/stix-shifter)
