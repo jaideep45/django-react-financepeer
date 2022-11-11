@@ -9,6 +9,8 @@ Clone this repository and install docker. Then:
 * `Go to localhost:3000 to see the front end and you'll see the site!`
 * Upload a valid json with a similar schema to add more entries
 
+* PS: Though referred the code written by osintalex, I have rebuilt the project from scratch
+
 ## Tech Stack
 
 * Python
