@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+table{
+  width: 100%;
+  padding: 48px;
+
+}
+
+thead{
+  background-color: bisque;
+  margin-bottom: 24px;
+}
+
+tbody{
+  padding-top: 24px;
+}
+
+tr{
+  margin-bottom: 8px;
+}
+
+.header{
+  width: 100%;
+  padding-top: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 48px;
+}
+
+.title{
+  font-size: 48px;
+}
+
+.but{
+  height: 48px;
+  width: 120px;
+  margin-right: 48px;
+}
+
+.message{
+  color: orange;
+  margin-top: 24px;
+  margin-left: 96px;
+  width: 100%;
+  display: inline;
+  text-align: left;
+}
+
+.auth{
+  margin-top: 96px;
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+

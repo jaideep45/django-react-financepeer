@@ -11,10 +11,10 @@ services:
     environment:
       POSTGRES_PASSWORD: thisisabadpasswordresetforproduction
   django:
-    build: ./django-cti-react/django-backend
+    build: ./django-cti-react/dja_backend
     command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
     volumes:
-      - ./django-cti-react/django-backend:/app/django-backend
+      - ./django-cti-react/dja_backend:/app/dja_backend
     ports:
       - "8000:8000"
     depends_on:
@@ -26,3 +26,4 @@ services:
       - ./django-cti-react/react-frontend:/app/react-frontend
     ports:
       - "3000:3000"
+    stdin_open: true
